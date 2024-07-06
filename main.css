@@ -6,13 +6,98 @@ body {
     fixed no-repeat bottom #EEE3E4 !important;
     background-size: 100% !important;}
 
-
-
 /* Псевдо аватарка */
 .p-profiles .profile-head .c-brief .avatar {
     background-image: url(https://i.postimg.cc/yd3YytRw/photo-2024-07-06-17-08-30.png) !important; /* Ссылка на картинку */
     height: 538px; /* Высота изображения */
 }
+
+/* -------Избранное---------*/
+/*1st*/
+article.entry-52635 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/wxC1xSbt/Tower-Of-God-S2.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/*2nd*/
+article.entry-40221 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/T2ZbsyVW/Tower-Of-God-S1-1.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/*3rd*/
+article.entry-34572 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/1t3db7ZM/Black-Clover.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/*4th*/
+article.entry-9253 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/JzKvKCft/Steins-Gate.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/*5th*/
+article.entry-50593 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/NfFHL6QV/Tonnel-To-Summer.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/*6th*/
+article.entry-32281 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/8c9P7rHQ/YourName.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/*7th*/
+article.entry-122663 a.cover span.image-decor span.image-cutter picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.postimg.cc/rwLM7TZJ/manhva-Tower-Of-God.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+/* -------Избранное---------*/
 
 
 /* Цвета */
@@ -20,7 +105,7 @@ body {
 
 /*　Основные цвета */
 
-    --c1: 180, 214, 242; /* Основной цвет темы и ссылок */
+    --c1: 112, 177, 230; /* Основной цвет темы и ссылок */
     --c2: 155, 155, 238; /* Цвет ссылок и некоторых эллементов при наведении */
     --c3: 180, 214, 242; /* Цвет ссылок и некоторых эллементов при нажатии */
 
@@ -42,7 +127,19 @@ body {
     --d2: rgba(255, 255, 255, .06); /*　Цвет слабого осветления */
 }
 
+.b-news_wall-topic .title {
+    color: var(--c1);
+}
+.b-news_wall-topic .status-line .comments {
+    color: var(--c1);
+}
+.p-dashboards-show .v2 .my-list{
+    background: #262626;
+}
 
+.p-dashboards-show .v2 .my-list .label .misc-links a {
+    color: #e6a570;
+}
 /* Дополнительные цветные элементы в профиле */
 
 /* Полоска аниме */
@@ -68,8 +165,7 @@ body {
     background: linear-gradient(112deg, #2e2e2e, #141414);
 }
 
-
-/* Полоска активности */
+/* Полоска активности*/
 .b-stats_bar.lifetime .bar .first {
     background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.6) 100.2%);
 }
@@ -7314,6 +7410,7 @@ a.b-button {
 ::-webkit-scrollbar-corner {
     background-repeat: no-repeat;
 }
+
 
 ::-webkit-resizer {
     background-image: url('');
