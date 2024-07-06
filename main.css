@@ -148,7 +148,7 @@ body {
 
 
 
-/* Вернуть стандартные эллементы /*
+/* Вернуть стандартные элементы /*
 Удалите нужное правило чтобы вернуть определённый эллемент */
 /* Лента */
 .p-profiles-show .profile-content > .block:not([class*=" "]):not(.cc-2 .block) {
@@ -169,7 +169,6 @@ body {
 
 
 /* Избранное */
-
 /* Избранное */
 /* -------------------- Настройки -------------------- */
 
@@ -1659,7 +1658,7 @@ header.head a.edit:active,
 }
 
 .l-footer:before {
-    content: 'govno';
+    content: '口ルテル';
     display: block;
     float: left;
     position: static;
