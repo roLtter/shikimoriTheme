@@ -1,5 +1,19 @@
 /* -------------------- Настройки -------------------- */
 
+/* Фон */
+body {
+    background:url(https://i.postimg.cc/FzNs34tG/image.png)
+    fixed no-repeat bottom #EEE3E4 !important;
+    background-size: 100% !important;}
+
+
+
+/* Псевдо аватарка */
+.p-profiles .profile-head .c-brief .avatar {
+    background-image: url(https://i.postimg.cc/yd3YytRw/photo-2024-07-06-17-08-30.png) !important; /* Ссылка на картинку */
+    height: 538px; /* Высота изображения */
+}
+
 
 /* Цвета */
 :root {
@@ -81,20 +95,6 @@
     background: #2e2e2e;
 }
 
-
-
-/* Фоновая картинка */
-body {
-    background-image: url()!important;
-}
-
-
-
-/* Псевдо аватарка */
-.p-profiles .profile-head .c-brief .avatar {
-    background-image: url(https://i.postimg.cc/yd3YytRw/photo-2024-07-06-17-08-30.png) !important; /* Ссылка на картинку */
-    height: 538px; /* Высота изображения */
-}
 
 
 
