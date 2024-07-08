@@ -102,8 +102,8 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 
 /* Цвета */
 :root {
-
-/*　Основные цвета */
+    --font-alt: Open Sans, Helvetica Neue, Arial, Verdana, sans-serif;
+    /*　Основные цвета */
 
     --c1: 112, 177, 230; /* Основной цвет темы и ссылок */
     --c2: 155, 155, 238; /* Цвет ссылок и некоторых эллементов при наведении */
@@ -127,19 +127,327 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     --d2: rgba(255, 255, 255, .06); /*　Цвет слабого осветления */
 }
 
+/* News Wall! */
+
+
 .b-news_wall-topic .title {
     color: var(--c1);
 }
+
 .b-news_wall-topic .status-line .comments {
-    color: var(--c1);
+    color: #9da2a8;
 }
+
 .p-dashboards-show .v2 .my-list{
     background: #262626;
 }
 
-.p-dashboards-show .v2 .my-list .label .misc-links a {
-    color: #e6a570;
+.p-user_rates-index .list-lines tr td .episodes_total{
+    color: var(--t2);
 }
+
+.my-list .label {
+    position: relative;
+}
+
+.p-dashboards-show .v2 .my-list .label .misc-links a{
+    color: #ffffff
+}
+
+.p-dashboards-show .v2 .my-list .label .misc-links{
+    position: relative;
+    top: 17px;
+    right: 50px;
+}
+
+.p-dashboards-show .v2 .my-list .label span {
+    position:relative;
+    color: var(--t1);
+    font-weight: 700;
+    letter-spacing: 0.13px;
+    font-size: 13.2px;
+    text-transform: uppercase;
+    font-family: var(--font-alt);
+    text-decoration: none;
+    left: 75px;
+}
+.b-user_rate-history{
+    position: relative;
+    top: 12px;
+}
+
+.b-user_rate-history .score-time time{
+    color: #9da2a8;
+}
+
+.b-user_rate-history .status-counter .status {
+    color: #9da2a8;
+    position: relative;
+    bottom: 3px;
+    font-family: var(--font-alt);
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.b-user_rate-history .status-counter .counter span{
+    display: none;
+}
+
+.b-user_rate-history .status-counter .counter{
+    position: relative;
+    color: #9ac8ed;
+    font-size: 14px;
+    bottom: 4px;
+}
+.b-user_rate-history .progress .completed{
+    background: linear-gradient(22deg, #298dfa, #5edff1);
+}
+
+.b-user_rate-history .score-time .stars-container{
+    display: none;
+}
+
+.p-dashboards-show .v2 .my-list {
+    padding: 5px 5px 8px;
+    border: 2px solid rgba(144,  213,  236, .5);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Рекомендации"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Избранное"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Аниме 2023"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Лето 2024"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Весна 2024"]{
+    display: none;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Аниме 2024"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Онгоинги"]{
+    text-indent: -9999px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover {
+    background: none;
+    border: 2px solid rgb(var(--c2));
+    color: rgb(var(--c2));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Аниме 2024"]::before {
+    content: "2024";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-indent: 0;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Онгоинги"]::before {
+    content: "ONGOING";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-indent: 0;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag {
+    position: relative;
+    background: none;
+    font-size: 2em;
+    padding: 10px 27px;
+    margin: 5px;
+    display: inline-block;
+    border: 2px solid rgb(var(--c1));
+    text-decoration: none;
+    width: 265px;
+    text-align: center;
+    font-family: var(--font-alt);
+    color: rgb(var(--c1));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Рекомендации"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Избранное"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag.one_shot[title="Ваншот"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Маньхуа"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Додзинси"]{
+    display: none;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Манга"],
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Манхва"]{
+    text-indent: -9999px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover {
+    background: none;
+    border: 2px solid rgb(var(--c2));
+    color: rgb(var(--c2));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Манга"]::before {
+    content: "MANGA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-indent: 0;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Манхва"]::before {
+    content: "MANHWA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-indent: 0;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag {
+    position: relative;
+    background: none;
+    font-size: 2em;
+    padding: 10px 27px;
+    margin: 5px;
+    display: inline-block;
+    border: 2px solid rgb(var(--c1));
+    text-decoration: none;
+    width: 265px;
+    text-align: center;
+    font-family: var(--font-alt);
+    color: rgb(var(--c1));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
+    background: none;
+    border: 2px solid rgb(var(--c2));
+    color: rgb(var(--c2));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
+    text-indent: -9999px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag::before {
+    content: "FAVORITES"; /* Новый текст для замены */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-indent: 0;
+    transform: translate(-50%, -50%); /* Центрируем новый текст */
+}
+
+.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
+    position: relative;
+    background: none;
+    font-size: 2em;
+    padding: 10px 27px;
+    margin: 5px;
+    display: inline-block;
+    border: 2px solid rgb(var(--c1));
+    text-decoration: none;
+    width: 265px;
+    text-align: center;
+    font-family: var(--font-alt);
+    color: rgb(var(--c1));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button {
+    position: relative;
+    max-width: 265px;
+    width: 265px;
+    line-height: 1.6;
+    bottom: 5px;
+    right: 4px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button {
+    text-indent: -9999px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button:before {
+    content: "ФОРУМ"; /* Новый текст для замены */
+    position: absolute;
+    font-family: var(--font-alt);
+    font-weight: bold;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    text-indent: 0;
+    transform: translate(-50%, -50%);
+}
+
+.b-link_button.dark.mini.create-topic{
+    position: relative;
+    right: 17px;
+}
+
+.b-news_line-topic .status-line .author span,
+.b-news_line-topic .status-line .comments{
+    color: #9da2a8;
+}
+
+.p-dashboards-show .v2 .db-update .tags{
+    height: 100px;
+}
+
+.headline .misc-links, .midheadline .misc-links, .subheadline .misc-links{
+    display: none;
+}
+/* News Wall! */
+
+/* History && Mail Page */
+.p-profiles-show .profile-content > .cc-2.block,
+.b-db_entry .c-image .block,
+.b-db_entry>.c-about .c-info-left .block,
+.b-db_entry>.c-about .c-info-right .block,
+.menu-slide-outer.x199 .l-content,
+.x1200 .b-db_entry>.c-description .block{
+    background: none !important;
+    border: none !important;
+    padding: 0 0 !important;
+    margin: 0 !important;
+}
+
+.l-page div > .block:not(cc-2.block){
+    background: var(--b2);
+    border: 1px solid var(--b3);
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+
+.l-page div > .block > .block:not(cc-2.block){
+    background: none;
+    border: none;
+    padding: 0px 0px;
+}
+/* History  && Mail Page */
+
+
+
+
+
+
+
+
+
+/* Rating Fix */
+.b-catalog_entry-tooltip .inner .rating{
+    color: var(--t2) !important;
+}
+
+.b-catalog_entry-tooltip .inner .rating .text {
+    color: var(--t2) !important;
+}
+/* Rating Fix */
+
+/* Links && Ads hidden */
+.l-footer .links a{
+    display: none !important;
+}
+
+.l-footer .copyright{
+    opacity: 0% !important;
+}
+/* Links  && Ads hidden */
 /* Дополнительные цветные элементы в профиле */
 
 /* Полоска аниме */
@@ -176,9 +484,10 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 /* Вертикальные полоски */
 .p-profiles-show .profile-content .activity .bar.vertical .line .bar-container .bar {
     background: rgb(22,26,156);
-    background: linear-gradient(0deg, rgba(22,26,156,1) 0%, rgba(29,86,182,1) 35%, rgba(0,155,255,1) 90%) !important;
+    background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.6) 100.2%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-
 
 /* Полоски ачивок */
 .b-achievement .c-about .progress .bar,
@@ -196,8 +505,13 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 
 /* Отступы верхнего меню от краев страницы */
 .l-top_menu-v2 {
+    opacity: 0%;
+    background: rgb(var(--c1));
     padding-left: 4% !important;
     padding-right: 4% !important;
+}
+.l-top_menu-v2:hover{
+    opacity: 100%;
 }
 /* Отступы верхнего меню от краев страницы */
 
@@ -252,6 +566,12 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 }
 
 /* Лента */
+
+/* Фидбек */
+.b-feedback > .marker-positioner {
+    display: none !important;
+}
+/* Фидбек */
 
 /* Клубы */
 .p-profiles-show .profile-content .c-right > .cc-2a > .c-column:last-child {
@@ -791,9 +1111,6 @@ header.head a.edit:active,
 }
 
 /* Верхнее меню */
-.l-top_menu-v2 {
-    background: rgb(var(--c1));
-}
 
 .l-top_menu-v2 .logo-container {
     margin-right: 10px;
@@ -1396,7 +1713,7 @@ header.head a.edit:active,
     border-radius: 0;
     text-align: center;
     font-size: 18px;
-    padding: 0 0 18px 0;
+    padding: 0 0 9px 0;
     line-height: normal;
 }
 
@@ -1599,10 +1916,6 @@ header.head a.edit:active,
 
 .p-profiles-show.x1200 .profile-content .c-right > .cc-2a > .c-column {
     width: 36%;
-}
-
-.p-profiles-show .profile-content > .cc-2.block {
-    margin: 0;
 }
 
 .p-profiles-show .profile-content .c-right > .cc-2a > .c-column:last-child {
@@ -7424,7 +7737,3 @@ a.b-button {
     height: 6px;
 }
 /* Скроллбар */
-
-
-
-/* -------------------- Ваши наработки -------------------- */
