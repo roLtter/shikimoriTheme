@@ -127,9 +127,12 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     --d2: rgba(255, 255, 255, .06); /*　Цвет слабого осветления */
 }
 
+/* Small fixes*/
+
+/* Small fixes*/
+
+
 /* News Wall! */
-
-
 .b-news_wall-topic .title {
     color: var(--c1);
 }
@@ -393,7 +396,6 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     display: none;
 }
 /* News Wall! */
-
 /* History && Mail Page */
 .p-profiles-show .profile-content > .cc-2.block,
 .b-db_entry .c-image .block,
@@ -420,15 +422,6 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     padding: 0px 0px;
 }
 /* History  && Mail Page */
-
-
-
-
-
-
-
-
-
 /* Rating Fix */
 .b-catalog_entry-tooltip .inner .rating{
     color: var(--t2) !important;
@@ -460,7 +453,6 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 .b-stats_bar.anime .bar .third {
     background: linear-gradient(112deg, #2e2e2e, #141414);
 }
-
 
 /* Полоска манги */
 .b-stats_bar.manga .bar .first {
@@ -500,30 +492,24 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     background: #2e2e2e;
 }
 
-
-
-
 /* Отступы верхнего меню от краев страницы */
 .l-top_menu-v2 {
     opacity: 0%;
     background: rgb(var(--c1));
     padding-left: 4% !important;
+    transition: opacity 0.3s ease-in-out;
     padding-right: 4% !important;
 }
-.l-top_menu-v2:hover{
-    opacity: 100%;
+.l-top_menu-v2:hover {
+    opacity: 1;
 }
 /* Отступы верхнего меню от краев страницы */
-
-
 
 /* Изменить растояние между графиками аниме и манги (отступы от полоски между ними) */
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime:after {
     margin-top: 12px !important; /* Отступ сверху */
     margin-bottom: 20px !important; /* Отступ снизу */
 }
-
-
 
 /* Переименовывание блоков */
 
