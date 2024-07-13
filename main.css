@@ -9,7 +9,7 @@ body {
 /* Псевдо аватарка */
 .p-profiles .profile-head .c-brief .avatar {
     background-image: url(https://i.postimg.cc/yd3YytRw/photo-2024-07-06-17-08-30.png) !important; /* Ссылка на картинку */
-    height: 538px; /* Высота изображения */
+    height: 628px; /* Высота изображения */
 }
 
 /* -------Избранное---------*/
@@ -102,35 +102,27 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 
 /* Цвета */
 :root {
-    --font-alt: Open Sans, Helvetica Neue, Arial, Verdana, sans-serif;
-    /*　Основные цвета */
+    --font-alt: Open Sans, Helvetica Neue, Arial, Verdana, sans-serif; /*main font*/
+    /*　Primary */
 
-    --c1: 112, 177, 230; /* Основной цвет темы и ссылок */
-    --c2: 155, 155, 238; /* Цвет ссылок и некоторых эллементов при наведении */
-    --c3: 180, 214, 242; /* Цвет ссылок и некоторых эллементов при нажатии */
+    --c1: 112, 177, 230;
+    --c2: 155, 155, 238;
+    --c3: 180, 214, 242;
 
-    /*　Цвета фона */
+    /*　4background */
 
-    --b1: #1a1a1a; /*　Цвет фона страницы */
-    --b2: #262626; /*　Цвет фона блоков */
-    --b3: #404040; /*　Цвет границ блоков */
+    --b1: #1a1a1a;
+    --b2: #262626;
+    --b3: #404040;
 
-    /*　Цвета текста */
+    /*　4text */
+    --t1: #fff;
+    --t2: #bfbfbf;
+    --t3: #b3b3b3;
 
-    --t1: #fff; /*　Цвет заголовков и кнопок */
-    --t2: #bfbfbf; /*　Цвет текста */
-    --t3: #b3b3b3; /*　Цвет серого текста */
-
-    /*　Цвета осветления (используется в некоторых блоках и кнопках) */
-
-    --d1: rgba(255, 255, 255, .1); /*　Цвет сильного осветления */
-    --d2: rgba(255, 255, 255, .06); /*　Цвет слабого осветления */
+    --d1: rgba(255, 255, 255, .1);
+    --d2: rgba(255, 255, 255, .06);
 }
-
-/* Small fixes*/
-
-/* Small fixes*/
-
 
 /* News Wall! */
 .b-news_wall-topic .title {
@@ -441,9 +433,354 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     opacity: 0% !important;
 }
 /* Links  && Ads hidden */
-/* Дополнительные цветные элементы в профиле */
 
-/* Полоска аниме */
+/* Top menu */
+.l-top_menu-v2 {
+    opacity: 0%;
+    background: rgb(var(--c1));
+    padding-left: 4% !important;
+    transition: opacity 0.3s ease-in-out;
+    padding-right: 4% !important;
+}
+.l-top_menu-v2:hover {
+    opacity: 1;
+}
+/* Top menu */
+
+/* Comments(Dubbings) */
+
+.p-user_rates-index .list-lines tr.edit-form .b-input.text .control-label {
+    visibility: hidden;
+    position: relative;
+}
+
+.p-user_rates-index .list-lines tr.edit-form .b-input.text .control-label::after {
+    content: "Озвучка:";
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.b-user_rate .rate-edit .b-input.text .control-label {
+    visibility: hidden;
+    position: relative;
+}
+
+.b-user_rate .rate-edit .b-input.text .control-label::after {
+    content: "Озвучка:";
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* Comments(Dubbings) */
+
+/* Small fixes*/
+.b-menu-line.is-spoilers .b-anime_status_tag.spoilers {
+    display: none;
+}
+
+.b-subposter-action[original-title="Написать рецензию"] {
+    display: none;
+}
+
+.b-to-top.active .arrow:before{ /* Disable arrow */
+    opacity: 0;
+}
+
+.b-user16 img {
+    position: relative;
+    top: 4px;
+    left: 16px;
+    transform: scale(1.5);
+    border-radius: 100%;
+    transition: .3s ease;
+}
+.b-user16 img:hover{
+    transform: scale(1.8);
+    filter: none;
+}
+.b-show_more{
+    position: relative;
+    top: 5px;
+    margin-top: 6px;
+    margin-left: 0px;
+}
+
+.b-lang_trigger span{
+    opacity: 0;
+}
+
+.l-content .b-comments,
+.b-comments+.editor-container{
+    background: var(--b1)
+}
+
+.b-comments+.editor-container > subheadline{
+    position: relative;
+    top: 3px;
+}
+/* Small fixes*/
+
+/* Comments Section */
+.b-review-topic.is-review_review_author_details>.inner header{
+    display: block;
+}
+
+.b-review-topic.is-review_review_author_details>.inner>aside.buttons{
+    display: none;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .user-rate .b-add_to_list .trigger{
+    position: absolute;
+    border-left-width: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: -18px;
+    right: 311px;
+}
+
+.b-topic>.inner.b-height_shortened{
+    height: 176px !important;
+}
+
+.b-topic > .inner header img{
+    position: relative;
+    top: -2px;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-details .name-url .to-review::before{
+    content: "К ОТЗЫВУ";
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-details .name-url .to-review{
+    visibility: hidden;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-details .name-url .to-review::before{
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: bold;
+    visibility: visible;
+    background: transparent;
+    padding: 2px 6px 22px;
+    border: 2px solid;
+    border-radius: 4px;
+    position: absolute;
+    right: 180px;
+    top: 10px;
+    color: rgb(var(--c1));
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-details .name-url .to-review:hover::before{
+    border: 2px solid rgb(var(--c2));
+    color: rgb(var(--c2));
+}
+
+.b-reviews_navigation .navigation-container a:hover .label span,
+.b-reviews_navigation .navigation-container a:hover .count{
+    color: rgb(var(--c1));
+}
+
+.b-reviews_navigation .navigation-container{
+    height: 100px;
+}
+
+.b-reviews_navigation .navigation-node-all{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    height: 30px;
+    position: relative;
+    bottom: 9px;
+    left: 305px;
+}
+
+.b-reviews_navigation .navigation-node .label{
+    color: #ffffff;
+}
+
+.b-reviews_navigation .navigation-node .count:before{
+    position: relative;
+    bottom: 1px;
+    color: #878686;
+    font-size: 16px;
+    content: "| ";
+}
+
+.b-reviews_navigation .navigation-node .count{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.b-reviews_navigation .navigation-node .count:after{
+    visibility: hidden;
+}
+
+.b-reviews_navigation .navigation-container a:hover,
+.b-reviews_navigation .navigation-container a:hover .label span,
+.b-reviews_navigation .navigation-container a:hover .count{
+    text-decoration: none !important;
+}
+
+.b-reviews_navigation .navigation-node-positive,
+.b-reviews_navigation .navigation-node-neutral,
+.b-reviews_navigation .navigation-node-negative
+{
+    background: transparent;
+    position: relative;
+    right: 105px;
+    height: 40px;
+    top: 40px;
+}
+
+.b-reviews_navigation .navigation-node:not(.is-active):not(.is-empty):hover{
+    background: transparent;
+}
+.b-reviews_navigation .navigation-node.is-ellipsis .label span{
+    overflow: visible;
+}
+.b-reviews_navigation .navigation-node.is-ellipsis,{
+    min-width: 100px;
+}
+.b-reviews_navigation .navigation-node.is-ellipsis .label{
+    min-width: 151px;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .opinion{
+    position: relative;
+    right: 7px;
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .opinion.negative{
+    top: 3px;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .opinion.neutral{
+    top: 3px;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .label.neutral{
+    color: #8e8e8e;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .user-rate-label{
+    display: none;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .label{
+    position: relative;
+    bottom: 3px;
+    right: 14px;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-info .user-rate .b-rate{
+    position: absolute;
+    top: 10px;
+    right: 311px;
+}
+.b-review-topic.is-review_review_author_details>.inner .review-info .user-rate .b-add_to_list{
+    position: absolute;
+    right: 17px;
+}
+
+.b-review-topic.is-review_review_author_details>.inner .review-details .created_at{
+    color: #8e8c8c;
+    position: absolute;
+    top: 33px;
+    right: 14px;
+}
+
+.b-status-line .section.main:after,
+.b-critique_votes span:not(.votes-for):not(.votes-against){
+    display: none;
+}
+
+.b-critique_votes{
+    position: absolute;
+    right: 28px;
+    top: 11px;
+}
+
+.b-critique_votes .votes-for{
+    position: relative;
+    bottom: 1.1px;
+    right: 40px;
+}
+
+.b-critique_votes .votes-against{
+    position: relative;
+    right: 5px;
+    bottom: 1.1px;
+}
+
+.b-critique_votes:before{
+    color: #dcaa39;
+}
+
+.b-status-line .section.main .comments{
+    color: #ffffff;
+    position: absolute;
+    top: 33px;
+    right: 215px;
+}
+
+.b-status-line .section.main .comments:before{
+    color: #ffffff;
+}
+
+.b-footer_vote{
+    background: transparent;
+    color: #dfdfdf;
+    border: none;
+    border-top: 2px solid #989898;
+}
+
+.b-footer_vote .vote-group{
+    position: relative;
+    top: 25px;
+    right: 140px;
+}
+
+.b-footer_vote .vote-group .vote span{
+    opacity: 1;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+}
+
+.b-footer_vote .vote-group .vote.yes:before{
+    opacity: 1;
+    color: #2ecc40;
+}
+
+.b-footer_vote .vote-group .vote.no:before{
+    opacity: 1;
+    color: #ff4136;
+}
+
+.b-footer_vote .vote-group .vote {
+    color: #ffffff;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease, color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: opacity 0.2s ease, color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.b-footer_vote .star{
+    color: #dcaa39;
+}
+/* Comments Section */
+
+
+
+/* Anime bar */
+.b-stats_bar.anime .bar{
+    border-radius: 4px;
+}
 .b-stats_bar.anime .bar .first {
     background: linear-gradient(22deg, #298dfa, #5edff1);
 }
@@ -454,7 +791,10 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     background: linear-gradient(112deg, #2e2e2e, #141414);
 }
 
-/* Полоска манги */
+/* Manga bar */
+.b-stats_bar.manga .bar{
+    border-radius: 4px;
+}
 .b-stats_bar.manga .bar .first {
     background: linear-gradient(22deg, #ffd400, #ff9);
 }
@@ -465,7 +805,10 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     background: linear-gradient(112deg, #2e2e2e, #141414);
 }
 
-/* Полоска активности*/
+/* Activity bar */
+.b-stats_bar.lifetime .bar{
+    border-radius: 4px;
+}
 .b-stats_bar.lifetime .bar .first {
     background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.6) 100.2%);
 }
@@ -473,7 +816,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     background: linear-gradient(22deg, #474747, #2e2e2e);
 }
 
-/* Вертикальные полоски */
+/* Vertical activity bar */
 .p-profiles-show .profile-content .activity .bar.vertical .line .bar-container .bar {
     background: rgb(22,26,156);
     background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.6) 100.2%);
@@ -491,19 +834,6 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 .b-achievement .about .progress {
     background: #2e2e2e;
 }
-
-/* Отступы верхнего меню от краев страницы */
-.l-top_menu-v2 {
-    opacity: 0%;
-    background: rgb(var(--c1));
-    padding-left: 4% !important;
-    transition: opacity 0.3s ease-in-out;
-    padding-right: 4% !important;
-}
-.l-top_menu-v2:hover {
-    opacity: 1;
-}
-/* Отступы верхнего меню от краев страницы */
 
 /* Изменить растояние между графиками аниме и манги (отступы от полоски между ними) */
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime:after {
@@ -544,8 +874,8 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 
 
 
-/* Вернуть стандартные элементы /*
-Удалите нужное правило чтобы вернуть определённый эллемент */
+/* display: none */
+
 /* Лента */
 .p-profiles-show .profile-content > .block:not([class*=" "]):not(.cc-2 .block) {
     display: none !important;
@@ -570,9 +900,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 /* Клубы */
 
 
-/* Избранное */
-/* Избранное */
-/* -------------------- Настройки -------------------- */
+/* -------------------- Fonts -------------------- */
 
 /* cyrillic-ext */
 @font-face {
@@ -1096,7 +1424,7 @@ header.head a.edit:active,
     display: none;
 }
 
-/* Верхнее меню */
+/* TopMenu */
 
 .l-top_menu-v2 .logo-container {
     margin-right: 10px;
@@ -1436,9 +1764,9 @@ header.head a.edit:active,
 .l-top_menu-v2 .icon-sign_out:before {
     content: 'power_settings_new';
 }
-/* Верхнее меню */
+/* Top menu */
 
-/* Профиль */
+/* Profile */
 .p-profiles .profile-head {
     margin-top: 7rem;
 }
@@ -1447,7 +1775,7 @@ header.head a.edit:active,
     position: relative;
     max-width: 1000px;
     width: 36%;
-    max-height: 538px;
+    max-height: 628px;
     background: var(--b2);
     padding: 20px;
     margin: 20px 20px 78px;
@@ -1855,7 +2183,6 @@ header.head a.edit:active,
 
 .p-profiles-show .cc-friends .b-user .avatar > img {
     box-shadow: 0 0 0 0;
-    filter: opacity(0.3) blur(1px);
     transform: scale(1.3);
     transition: .5s ease;
 }
@@ -2082,6 +2409,7 @@ header.head a.edit:active,
 }
 
 .p-profiles .profile-head .c-brief header h1 {
+    pointer-events: none !important;
     font-family: 'Ubuntu', sans-serif;
     border-bottom: none;
     color: var(--t1);
@@ -2375,6 +2703,11 @@ header.head a.edit:active,
     right: 0;
 }
 
+.b-menu-line.friend-rate .b-user16 span{
+    position: relative;
+    left: 25px;
+}
+
 .b-show_more-more .friend-rate .b-user16 span,
 .b-menu-line.friend-rate .b-user16 span {
     font-size: 14px;
@@ -2386,6 +2719,8 @@ header.head a.edit:active,
 }
 
 .b-animes-menu .friend-rate .status {
+    position: relative;
+    top: 2.5px;
     text-transform: uppercase;
     font-size: 10px;
     font-weight: bold;
@@ -2401,9 +2736,13 @@ header.head a.edit:active,
 }
 
 .b-menu-line.friend-rate {
+    height: 30px;
+    position: relative;
+    width: 250px;
+    right: 30px;
     display: block;
     border-radius: 4px;
-    padding: 0 8px 0 0;
+    padding: 0 0 0 0;
     margin: 4px 0;
 }
 
@@ -2514,7 +2853,23 @@ header.head a.edit:active,
     display: block;
     margin: 0px 2% 4px 0;
     width: 48px;
-    border-radius: 4px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 0;
+    transition: .5s ease;
+}
+
+.b-comment > .inner header img:hover,
+.b-dialog > .inner header img:hover,
+.b-message > .inner header img:hover{
+    box-shadow: 0 0 0 2px rgb(var(--c1));
+    filter: none;
+    transform: scale(0.8);
+}
+
+.b-topic > .inner header img:hover{
+    box-shadow: 0 0 0 2px rgb(var(--c1));
+    filter: none;
+    transform: scale(1.25);
 }
 
 .b-comment > .inner header .name-date,
@@ -2640,9 +2995,49 @@ header.head {
     border: none !important;
 }
 
-.l-menu .block,
+.l-menu .b-favoured{
+    right: 1px;
+    background: var(--b2);
+    border: 1px solid var(--b3);
+    border-radius: 0 5px 5px 0 !important;
+    padding: 20px;
+    margin: 0 0 10px;
+}
+.b-menu-links.menu-topics-block.history.m30{
+    right: 1px;
+    background: var(--b2);
+    border: 1px solid var(--b3);
+    border-radius: 0 5px 5px 0 !important;
+    padding: 20px;
+    margin-bottom: 10px !important;
+}
+
+.l-menu .block{
+    position: relative;
+    right: 1px;
+    border-radius: 0 5px 5px 0 !important;
+    margin-bottom: 7px;
+}
+.menu-slide-outer.x199 .l-content .block{
+    border-radius: 5px 0 0 5px !important;
+}
+
+.p-animes-show .other-names{
+    background: none;
+    border: 2px solid rgb(var(--c1));
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: var(--font-alt);
+    color: rgb(var(--c1));
+}
+
+.p-animes-show .other-names:hover{
+    background: none;
+    border: 2px solid rgb(var(--c2));
+    color: rgb(var(--c2));
+}
+
 .l-menu .block2,
-.l-menu .b-favoured,
 .c-generated_news .block,
 .c-generated_news .midheadline,
 .b-clubs-menu .b-subposter-actions {
@@ -2678,8 +3073,7 @@ header.head {
 }
 
 .l-menu .b-forums,
-.b-menu_logo,
-.b-menu-links.menu-topics-block.history.m30 {
+.b-menu_logo {
     background: var(--b2);
     border: 1px solid var(--b3);
     border-radius: 4px;
@@ -2736,6 +3130,8 @@ header.head {
 
 .b-show_more,
 .b-show_more-more .hide-more {
+    position: relative;
+    top: 7px;
     background: rgba(255, 255, 255, .05);
     color: #b3b3b3;
     padding: 4px;
@@ -3472,10 +3868,6 @@ code {
 
 .b-quote .quoteable:before {
     font-size: 0;
-}
-
-.b-user16 img {
-    display: none;
 }
 
 .b-user16:hover a {
@@ -4308,7 +4700,7 @@ code {
 .l-menu #rates_statuses_stats .x_label {
     color: var(--t3);
     font-weight: bold;
-    font-size: 10px;
+    font-size: 9px;
     text-transform: uppercase;
     line-height: 22px;
 }
@@ -4317,24 +4709,35 @@ code {
     margin-bottom: 4px;
 }
 
+.contributors .b-user16 img{
+    display: none;
+}
 .bar.horizontal .line .bar-container .value {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     line-height: 22px;
     padding-right: 4px;
 }
 
-.b-rate .score-notice,
+.b-rate .score-notice{
+    display: none;
+}
 .b-rate .text-score {
+    position: relative;
+    left: 5px;
     color: var(--t3);
 }
 
 .b-rate .stars.score {
-    color: rgb(var(--c1));
+    background: linear-gradient(22deg, #298dfa, #5edff1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .bar.horizontal .line .bar-container .bar {
-    background: rgb(var(--c1)) !important;
+    background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.6) 100.2%) !important;
     height: 22px;
 }
 
@@ -4491,6 +4894,7 @@ header.head h2 a.back:before,
 }
 
 .p-profiles .profile-head .c-brief header h1.aliases:after {
+    display: none !important;
     margin: 0 0 0 10px;
     display: inline-block;
     content: 'arrow_drop_down';
@@ -4904,6 +5308,7 @@ input.subheadline-input.search {
 }
 
 .b-catalog_entry .cover .title {
+    text-align: center;
     color: var(--t1);
 }
 
@@ -5167,15 +5572,8 @@ td.name {
 .p-user_rates-index .tipsy.tipsy-s {
     margin-top: -20px;
 }
-
-.p-user_rates-index .list-lines tr td .rate-text:not(:empty) {
-    border-top: 1px solid var(--b3);
-    padding-top: 6px;
-    margin-top: 2px;
-    color: #b3b3b3;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1;
+.p-user_rates-index .list-lines tr td .rate-text{
+    display: none;
 }
 
 .p-user_rates-index .list-lines tr td .new-value .item-add:before {
@@ -5186,11 +5584,10 @@ td.name {
     margin: 4px 0 0 -12px;
 }
 
-.p-user_rates-index .list-lines tr td .rate-text:not(:empty):before {
-    content: 'Комментарий';
+.b-user_rate .rate-show .note:before {
+    content: 'Озвучка:';
     display: block;
     font-weight: bold;
-    margin: 0 0 10px;
 }
 
 .p-user_rates-index[data-locale='en'] .list-lines tr td .rate-text:not(:empty):before {
@@ -6063,26 +6460,7 @@ img.b-poster {
 }
 
 .b-comments-notifier {
-    background: transparent;
-    color: rgba(255, 255, 255, .6);
-    font-weight: bold;
-    border-radius: 100%;
-    cursor: pointer;
-    height: 25px;
-    line-height: 25px;
-    margin: 9px 6px !important;
-    min-width: 25px;
-    padding: 0 4px;
-    right: 8px;
-    top: 1px !important;
-    text-align: center;
-    position: fixed !important;
-    z-index: 99999;
-}
-
-.b-comments-notifier:hover {
-    background-color: transparent;
-    color: #fff;
+    display: none !important;
 }
 
 .b-image .edit:before {
@@ -7493,7 +7871,7 @@ a.b-button {
     position: absolute;
     right: 10px;
     top: -66px;
-    color: var(--t1);
+    color: rgb(var(--c1));
     font-size: 0;
     line-height: normal;
     margin: 0;
@@ -7653,9 +8031,9 @@ a.b-button {
     width: 100%;
     padding: 0 5px;
     margin-top: 0;
-    background: rgba(0, 0, 0, 0.5); /* Цвет фона */
-    color: #FAFAFA !important; /* Цвет текста */
-    font-size: 12px; /* Размер текста */
+    background: rgba(0, 0, 0, 0.5);
+    color: #FAFAFA !important;
+    font-size: 12px;
     line-height: 2;
     text-align: center;
     word-break: break-word;
