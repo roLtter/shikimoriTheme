@@ -1,5 +1,235 @@
 /* -------------------- Настройки -------------------- */
 
+/* Новости перестройка */
+
+
+.l-page .v2>.block2:nth-child(2){
+    background: none !important;
+    border: none !important;
+}
+
+.l-page .v2>.block2:nth-child(3){
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    top: 665px;
+    left: 325px;
+    width: 71.7%;
+}
+
+.l-page .v2 > .block2:nth-child(4){
+    background: none !important;
+    border: none !important;
+}
+
+.l-page .v2 > .block2:nth-child(4) > .fc-2_3 > .f-column:first-child{
+    display: none;
+}
+
+.l-page .v2 > .block2:nth-child(4) > .fc-2_3 > .f-column:last-child{
+    position: absolute;
+    top: 411px;
+    left: -50px;
+    background: var(--b2);
+    border-radius: 4px;
+    width: 25.5%;
+    border: 1px solid var(--b3);
+    padding: 9px 15px 4px;
+}
+
+.l-page .v2 > .block2:nth-child(5){
+    position: absolute;
+    top: 350px;
+    width: 1170px;
+}
+
+.p-dashboards-show .v2 .db-update .tags .b-tag{
+    display: none;
+}
+
+.p-dashboards-show .v2 .db-updates .inner > .db-update,
+.p-dashboards-show .v2 .db-updates .inner > .db-update,
+.p-dashboards-show .v2 .db-updates .inner > .db-update,
+.p-dashboards-show .v2 .db-updates .inner > .db-update{
+    height: 60px;
+}
+
+.p-dashboards-show .v2 .my-list {
+    padding: 5px 5px 8px;
+    border: 1px solid var(--b3);
+    border-radius: 4px;
+    height: 150px;
+    width: 25.5%;
+    background: var(--b2) !important;
+    position: absolute;
+    top: 308px;
+    left: 0px;
+}
+
+.l-page .v2 > .block2:last-child{
+    border-top-color: var(--b2);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    top: 979px;
+    width: 71.7%;
+    left: 325px;
+}
+
+.l-page .v2 > .block2:last-child > .headline.skyblue{
+    display: none;
+}
+
+.b-catalog_entry .cover .misc span{
+    width: 127px;
+    text-align: center;
+    color: rgb(var(--c2));
+}
+
+.p-dashboards-show .v2 .fc-user-sections > .f-sections{ /* Аниме, Манга, Ранобэ, Форум */
+    position: absolute;
+    top: 919px;
+}
+
+.b-anime_status_tag.other{
+    font-weight: bold;
+    font-size: 10px;
+    border: 2px solid rgb(var(--c1)) !important;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 2px;
+    margin-left: 0px;
+    margin-right: 4px !important;
+    padding-top: 0px !important;
+    padding-left: 2.5px !important;
+    padding-right: 2.5px !important;
+}
+
+/* Аниме */
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines > .f-headline:nth-child(1),
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags > .f-tags:nth-child(1){
+    position: relative;
+    top: 58px;
+    border: 1px solid var(--b3);
+    border-radius: 4px;
+    right: 20px;
+    background: var(--b2);
+    width: 145px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(1) .midheadline{
+    color: #f477ad;
+    border: none;
+    position: relative;
+    top: 8px;
+    left: 0px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(1){ /* Хэдлайн */
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-color: var(--b2);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags .f-tags:nth-child(1){ /* База */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-color: var(--b2);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2),
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags .f-tags:nth-child(2){
+    position: relative;
+    top: 58px;
+    right: 42px;
+    border: 1px solid var(--b3);
+    border-radius: 4px;
+    background: var(--b2);
+    width: 145px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2) .midheadline{
+    border: none;
+    position: relative;
+    top: 8px;
+    left: 0px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(1) .midheadline a,
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2) .midheadline a{
+    position: relative;
+    color: transparent;
+    text-decoration: none;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(1) .midheadline a:after,
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2) .midheadline a:after{
+    position: absolute;
+    top: 0;
+    color: #f477ad;
+    text-decoration: none;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(1) .midheadline a:after{
+    content: "ЗЫРКАТЬ";
+    left: 29px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2) .midheadline a:after{
+    content: "ЧИТАТЬ";
+    left: 35px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(1) .midheadline a:hover:after,
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2) .midheadline a:hover:after{
+    color: rgb(var(--c2));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(2){
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-color: var(--b2);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags .f-tags:nth-child(2){
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-color: var(--b2);
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-headlines .f-headline:nth-child(3),
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags .f-tags:nth-child(3) .tags{
+    display: none;
+}
+
+.l-page .v2 > .block2:nth-child(5) > .headline.magenta{
+    position: relative;
+    bottom: 13px;
+}
+
+.l-page .v2 > .block2:nth-child(5) > .headline.magenta > a:hover{
+    color: rgb(var(--c2)) !important;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags .f-tags:nth-child(3) .forum-container .arrow-right{
+    color: #f477ad;
+    background: var(--b2);
+    border-radius: 4px;
+    border: 1px solid var(--b3);
+    position: relative;
+    top: -114px;
+    right: 370px;
+    max-width: 298px;
+    width: 298px;
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-sections .fc-tags .f-tags:nth-child(3) .forum-container .arrow-right:hover{
+    color: rgb(var(--c2));
+    background: #454343;
+}
+/* Новости перестройка */
+
+
 /* Фон */
 body {
     background:url(https://i.postimg.cc/FzNs34tG/image.png)
@@ -133,10 +363,6 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     color: #9da2a8;
 }
 
-.p-dashboards-show .v2 .my-list{
-    background: #262626;
-}
-
 .p-user_rates-index .list-lines tr td .episodes_total{
     color: var(--t2);
 }
@@ -152,7 +378,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 .p-dashboards-show .v2 .my-list .label .misc-links{
     position: relative;
     top: 17px;
-    right: 50px;
+    right: 33px;
 }
 
 .p-dashboards-show .v2 .my-list .label span {
@@ -164,7 +390,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     text-transform: uppercase;
     font-family: var(--font-alt);
     text-decoration: none;
-    left: 75px;
+    left: 93px;
 }
 .b-user_rate-history{
     position: relative;
@@ -202,11 +428,6 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     display: none;
 }
 
-.p-dashboards-show .v2 .my-list {
-    padding: 5px 5px 8px;
-    border: 2px solid rgba(144,  213,  236, .5);
-}
-
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Рекомендации"],
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Избранное"],
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Аниме 2023"],
@@ -221,9 +442,9 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag:hover {
-    background: none;
+    color: #fff;
+    background: rgb(var(--c2));
     border: 2px solid rgb(var(--c2));
-    color: rgb(var(--c2));
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Аниме 2024"]::before {
@@ -236,7 +457,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag[title="Онгоинги"]::before {
-    content: "ONGOING";
+    content: "ОНГОИНГ";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -246,17 +467,20 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.anime-tag {
     position: relative;
+    left: 19px;
+    bottom: 10px;
     background: none;
-    font-size: 2em;
+    font-size: 18px;
+    font-weight: bold;
     padding: 10px 27px;
     margin: 5px;
     display: inline-block;
-    border: 2px solid rgb(var(--c1));
+    border: 2px solid rgb(var(--c2));
     text-decoration: none;
-    width: 265px;
+    width: 115px;
     text-align: center;
     font-family: var(--font-alt);
-    color: rgb(var(--c1));
+    color: #fff;
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Рекомендации"],
@@ -273,13 +497,13 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag:hover {
-    background: none;
+    color: #fff;
+    background: rgb(var(--c2));
     border: 2px solid rgb(var(--c2));
-    color: rgb(var(--c2));
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Манга"]::before {
-    content: "MANGA";
+    content: "МАНГА";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -288,7 +512,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 }
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag[title="Манхва"]::before {
-    content: "MANHWA";
+    content: "МАНХВА";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -298,60 +522,47 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 
 .p-dashboards-show .v2 .fc-user-sections .tag-link.manga-tag {
     position: relative;
+    left: 18px;
+    bottom: 10px;
     background: none;
-    font-size: 2em;
+    font-size: 18px;
+    font-weight: bold;
     padding: 10px 27px;
     margin: 5px;
     display: inline-block;
-    border: 2px solid rgb(var(--c1));
-    text-decoration: none;
-    width: 265px;
-    text-align: center;
-    font-family: var(--font-alt);
-    color: rgb(var(--c1));
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag:hover {
-    background: none;
     border: 2px solid rgb(var(--c2));
-    color: rgb(var(--c2));
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
-    text-indent: -9999px;
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag::before {
-    content: "FAVORITES"; /* Новый текст для замены */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-indent: 0;
-    transform: translate(-50%, -50%); /* Центрируем новый текст */
-}
-
-.p-dashboards-show .v2 .fc-user-sections .tag-link.ranobe-tag {
-    position: relative;
-    background: none;
-    font-size: 2em;
-    padding: 10px 27px;
-    margin: 5px;
-    display: inline-block;
-    border: 2px solid rgb(var(--c1));
     text-decoration: none;
-    width: 265px;
+    width: 115px;
     text-align: center;
     font-family: var(--font-alt);
-    color: rgb(var(--c1));
+    color: #fff;
 }
 
 .p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button {
+    background: none;
+    border: 2px solid rgb(var(--c1));
     position: relative;
     max-width: 265px;
     width: 265px;
     line-height: 1.6;
     bottom: 5px;
     right: 4px;
+}
+
+.subheadline-buttons > .create-topic{
+    line-height: 1.5;
+    position: relative !important;
+    right: 17px;
+    bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: none;
+    border: 2px solid rgb(var(--c1));
+}
+
+.p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button:hover,
+.subheadline-buttons > .create-topic:hover{
+    background-color: rgb(var(--c2));
 }
 
 .p-dashboards-show .v2 .fc-user-sections .f-tags.ranobe-tags .forum-container .b-link_button {
@@ -370,18 +581,13 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     transform: translate(-50%, -50%);
 }
 
-.b-link_button.dark.mini.create-topic{
-    position: relative;
-    right: 17px;
-}
-
 .b-news_line-topic .status-line .author span,
 .b-news_line-topic .status-line .comments{
     color: #9da2a8;
 }
 
 .p-dashboards-show .v2 .db-update .tags{
-    height: 100px;
+    height: 102px;
 }
 
 .headline .misc-links, .midheadline .misc-links, .subheadline .misc-links{
@@ -489,7 +695,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     opacity: 0;
 }
 
-.b-user16 img {
+.friend-rate .b-user16 img {
     position: relative;
     top: 4px;
     left: 16px;
@@ -497,7 +703,7 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     border-radius: 100%;
     transition: .3s ease;
 }
-.b-user16 img:hover{
+.friend-rate .b-user16 img:hover{
     transform: scale(1.8);
     filter: none;
 }
@@ -512,33 +718,165 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     opacity: 0;
 }
 
-.l-content .b-comments,
-.b-comments+.editor-container{
-    background: var(--b1)
+.b-comments .buttons .item-delete{
+    display: none;
 }
 
-.b-comments+.editor-container > subheadline{
-    position: relative;
-    top: 3px;
+.b-to-top .arrow{
+    display:none;
 }
 /* Small fixes*/
 
 /* Comments Section */
+
+.l-content .b-comments,
+.b-comments+.editor-container{
+    background: var(--b1);
+    border-radius: 5px;
+}
+
+.b-comments+.editor-container > .subheadline{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 80px;
+    position: relative;
+    padding-bottom: 4px;
+    top: -5px;
+    border: none;
+    left: 306px;
+}
+
+.b-quote .quoteable .b-user16 span{
+    color: rgb(var(--c1));
+    position: relative;
+    left: 25px;
+}
+
+.b-quote .quoteable .b-user16 span:hover{
+    color: rgb(var(--c2));
+}
+
+.b-quote div.quote-content{
+    position: relative;
+    top: 5px;
+}
+
+.b-spoiler_block>span{
+    text-transform: uppercase;
+    font-family: var(--font-alt);
+    font-weight: 600;
+    position: relative;
+    left: 6px;
+    background: none;
+    border: 2px solid rgb(var(--c1));
+    color: white;
+}
+
+.b-spoiler_block>div{
+    position: relative;
+    left: 6px;
+    bottom: 1px;
+    background-color: var(--b1);
+    border-left: 2px solid rgb(var(--c1));
+}
+
+.buttons .item-moderation{
+    display: none;
+}
+
+.inner .buttons>div{
+    position: relative;
+    top: 22px;
+}
+
+.inner .buttons>div:hover{
+    background: var(--b1);
+}
+
+.b-comment > .inner header .name-date a.name{
+    color: rgb(var(--c1));
+}
+
+.b-comment > .inner header .name-date a.name:hover{
+    color: rgb(var(--c2));
+}
+
+.b-comment > .inner header .name-date a.name:active{
+    color: rgb(var(--c1));
+}
+
+.b-comments .comments-loader:hover{
+    color: rgb(var(--c2));
+    background: rgb(var(--b1));
+}
+
+.l-content > .subheadline{
+    border: none;
+}
+
+.b-reviews_navigation .review-controls .to-other-reviews{
+    background: none;
+    border: 2px solid rgb(var(--c1));
+    text-transform: uppercase;
+    font-family: var(--font-alt);
+    font-weight: 600;
+    color: white;
+    border-radius: 2px;
+}
+
+.b-reviews_navigation .review-controls .to-other-reviews:hover{
+    background: rgb(var(--c1));
+}
+
+.b-mention > span,
+.b-mention s{
+    color: rgb(var(--c1)) !important;
+}
+
+.b-shiki_editor aside.markers{
+    position: static;
+}
+.b-shiki_editor aside.markers .b-offtopic_marker{
+    position: relative;
+    bottom: 22px;
+    right: 8px;
+}
+
+.b-shiki_editor footer input[type=submit]{
+    position: relative;
+    bottom: 5px;
+}
+
+.b-shiki_editor footer .preview{
+    position: relative;
+    bottom: 5px;
+}
+
+.buttons>div:hover{
+    background: transparent !important;
+
+}
+
+.b-shiki_editor footer .unpreview:not(.link){
+    position: relative;
+    bottom: 5px;
+}
+
+.ban .b-user16 img{
+    display: none;
+}
+
+
+/* Comments Section */
+
+/* Review Section */
 .b-review-topic.is-review_review_author_details>.inner header{
     display: block;
 }
 
 .b-review-topic.is-review_review_author_details>.inner>aside.buttons{
     display: none;
-}
-
-.b-review-topic.is-review_review_author_details>.inner .review-info .user-rate .b-add_to_list .trigger{
-    position: absolute;
-    border-left-width: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
-    top: -18px;
-    right: 311px;
 }
 
 .b-topic>.inner.b-height_shortened{
@@ -592,9 +930,9 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     background: transparent;
     border: none;
     height: 30px;
-    position: relative;
-    bottom: 9px;
-    left: 305px;
+    position: absolute;
+    top: 12px;
+    left: 343px;
 }
 
 .b-reviews_navigation .navigation-node .label{
@@ -625,15 +963,32 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     text-decoration: none !important;
 }
 
-.b-reviews_navigation .navigation-node-positive,
-.b-reviews_navigation .navigation-node-neutral,
+.b-reviews_navigation .navigation-node-positive{
+    position: absolute;
+    background: transparent;
+    top: 63px;
+    left: 50px;
+}
+
+.b-reviews_navigation .navigation-node-neutral{
+    position: absolute;
+    background: transparent;
+    top: 63px;
+    left: 340px;
+}
+
 .b-reviews_navigation .navigation-node-negative
 {
     background: transparent;
-    position: relative;
-    right: 105px;
-    height: 40px;
-    top: 40px;
+    position: absolute;
+    top: 63px;
+    right: 35px;
+}
+
+.b-reviews_navigation .navigation-node-negative.is-active{
+    position: absolute;
+    top: 63px;
+    right: 35px;
 }
 
 .b-reviews_navigation .navigation-node:not(.is-active):not(.is-empty):hover{
@@ -700,26 +1055,23 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
     display: none;
 }
 
-.b-critique_votes{
-    position: absolute;
-    right: 28px;
-    top: 11px;
-}
-
 .b-critique_votes .votes-for{
-    position: relative;
-    bottom: 1.1px;
-    right: 40px;
+    position: absolute;
+    top: 14px;
+    right: 74px;
 }
 
 .b-critique_votes .votes-against{
-    position: relative;
-    right: 5px;
-    bottom: 1.1px;
+    position: absolute;
+    right: 36px;
+    top: 14px;
 }
 
 .b-critique_votes:before{
     color: #dcaa39;
+    position: absolute;
+    top: 13px;
+    right: 50px;
 }
 
 .b-status-line .section.main .comments{
@@ -773,7 +1125,98 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 .b-footer_vote .star{
     color: #dcaa39;
 }
-/* Comments Section */
+
+.b-spoiler_inline:not(.is-opened) {
+    background-color: #452d2d;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+}
+
+.b-spoiler_inline:not(.is-opened):hover{
+    background-color: #a83c3c;
+}
+
+.user-rate .b-add_to_list.completed .trigger{
+    position: absolute;
+    border-left-width: 2px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    top: -18px;
+    right: 311px;
+}
+
+.b-add_to_list.completed .trigger:hover{
+    color: #419541;
+    border-color: initial;
+    background: rgba(44, 95, 38, 0.3);
+}
+
+.user-rate .b-add_to_list.dropped .trigger{
+    position: absolute;
+    border-left-width: 2px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    top: -20px;
+    right: 324.5px;
+}
+
+.b-add_to_list.dropped .trigger:hover {
+    color: #ff0610;
+    border-color: initial;
+    background: rgba(142, 22, 29, 0.3);
+}
+
+.user-rate .b-add_to_list.watching .trigger,
+.user-rate .b-add_to_list.rewatching .trigger{
+    position: absolute;
+    border-left-width: 2px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    top: -20px;
+    right: 328px;
+}
+
+.b-add_to_list.watching .trigger:hover,
+.b-add_to_list.rewatching .trigger:hover {
+    color: #1a8bda;
+    border-color: initial;
+    background: rgba(17, 80, 125, 0.3);
+}
+
+.user-rate .b-add_to_list.planned .trigger,
+.user-rate .b-add_to_list.on_hold .trigger{
+    position: absolute;
+    border-left-width: 2px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    top: -20px;
+    right: 322px;
+}
+
+.b-add_to_list.planned .trigger:hover,
+.b-add_to_list.on_hold .trigger:hover {
+    color: var(--t1);
+    border-color: initial;
+    background: rgba(255, 255, 255, .2);
+}
+
+.b-spoiler_inline.is-opened{
+    background-color: #452d2d;
+}
+
+.b-reviews_navigation .review-controls .create-topic{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 20px;
+    left: 100px;
+    background: transparent;
+    border: 2px solid rgb(var(--c1));
+    transition: 0.25s ease;
+    font-weight: 600;
+    font-family: var(--font-alt);
+}
+
+/* Review Section */
 
 
 
@@ -820,8 +1263,9 @@ article.entry-122663 a.cover span.image-decor span.image-cutter picture::before 
 .p-profiles-show .profile-content .activity .bar.vertical .line .bar-container .bar {
     background: rgb(22,26,156);
     background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.6) 100.2%);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    min-height: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Полоски ачивок */
@@ -1127,7 +1571,6 @@ header.head a.edit,
 .midheadline > a:hover:before,
 .subheadline > a:hover:before,
 .headline.linkheadline > a:hover,
-.linkheadline.midheadline > a:hover,
 .linkheadline.subheadline > a:hover,
 .headline.linkheadline > a:hover:before,
 .linkheadline.midheadline > a:hover:before,
@@ -1773,9 +2216,11 @@ header.head a.edit:active,
 
 .p-profiles .profile-head .c-brief .avatar {
     position: relative;
+    left: 630px;
+    bottom: 0px;
     max-width: 1000px;
-    width: 36%;
-    max-height: 628px;
+    width: 500px;
+    max-height: 500px;
     background: var(--b2);
     padding: 20px;
     margin: 20px 20px 78px;
@@ -2001,12 +2446,13 @@ header.head a.edit:active,
 }
 
 .p-profiles .profile-head .c-history {
-    position: inherit;
+    position: relative;
+    right: 544px;
     float: right;
     background: var(--b2);
     margin: 20px;
     padding: 20px;
-    width: 57%;
+    width: 50%;
     border: 1px solid var(--b3);
     border-radius: 4px;
 }
@@ -2049,10 +2495,12 @@ header.head a.edit:active,
 }
 
 .p-profiles .profile-head .c-info .c-lists-info {
+    position: relative;
+    right: 546px;
     display: inline-block;
     overflow: inherit;
     float: right;
-    width: 57%;
+    width: 50%;
     margin: 20px;
     padding: 20px;
     background: var(--b2);
@@ -2076,7 +2524,7 @@ header.head a.edit:active,
     display: block;
     float: right;
     clear: none;
-    width: 57%;
+    width: 1132px;
     min-height: 200px;
     height: auto;
     margin: 20px;
@@ -2164,12 +2612,12 @@ header.head a.edit:active,
 }
 
 .p-profiles-show .profile-content .activity .bar.vertical .line .bar-container {
-    width: 10px;
+    width: 15px;
     margin-left: 6px;
 }
 
 .p-profiles-show .profile-content .activity .bar.vertical .line .bar-container .value {
-    font-size: 0;
+    font-size: 10px;
 }
 
 .c-column.c-right {
@@ -2209,12 +2657,14 @@ header.head a.edit:active,
 }
 
 .p-profiles-show .profile-content .c-right > .cc-2a > .c-column:nth-child(2n+1) {
+    position: relative;
+    bottom: 638px;
+    left: 630px;
+    max-height: 143px;
     display: block;
     float: left;
     text-align: center;
-    width: 36%;
-    min-height: 200px;
-    height: auto;
+    width: 500px !important;
     margin: 20px;
     padding: 20px;
     background: var(--b2);
@@ -2266,6 +2716,8 @@ header.head a.edit:active,
 }
 
 .p-profiles-show .profile-content > .cc-2 > .c-column > .block:last-child {
+    position: relative;
+    bottom: 160px;
     display: block;
     float: left;
     vertical-align: middle;
@@ -2302,6 +2754,8 @@ header.head a.edit:active,
 }
 
 .p-profiles-show .profile-content .block.achievements {
+    position: relative;
+    bottom: 154px;
     display: inline-block;
     margin: 20px;
     padding: 20px;
@@ -2753,8 +3207,7 @@ header.head a.edit:active,
     margin: 4px 0;
 }
 
-.b-show_more-more .friend-rate:hover,
-.b-menu-line.friend-rate:hover {
+.b-show_more-more .friend-rate:hover{
     background: rgba(var(--c1), .1);
 }
 
@@ -2800,7 +3253,6 @@ header.head a.edit:active,
 
 .b-comments .faye-loader:hover,
 .b-forum .faye-loader:hover,
-.b-comments .comments-loader:hover,
 .b-comments .comments-hider:hover,
 .b-comments .comments-expander:hover {
     color: var(--t1);
@@ -2892,21 +3344,18 @@ header.head a.edit:active,
     margin: 12px 0 10px;
 }
 
-.b-comment > .inner header .name-date a.name,
 .b-topic > .inner header .name-date a.name,
 .b-dialog > .inner header .name-date a.name,
 .b-message > .inner header .name-date a.name {
     color: var(--t1);
 }
 
-.b-comment > .inner header .name-date a.name:hover,
 .b-topic > .inner header .name-date a.name:hover,
 .b-dialog > .inner header .name-date a.name:hover,
 .b-message > .inner header .name-date a.name:hover {
     color: rgb(var(--c1));
 }
 
-.b-comment > .inner header .name-date a.name:active,
 .b-topic > .inner header .name-date a.name:active,
 .b-dialog > .inner header .name-date a.name:active,
 .b-message > .inner header .name-date a.name:active {
@@ -3336,8 +3785,6 @@ body[data-locale='en'] .b-show_more-more .hide-more:before {
 .buttons .item-moderation:hover,
 .buttons .item-preview:hover,
 .buttons .item-unpreview:hover,
-.buttons .item-quote:hover,
-.buttons .item-reply:hover,
 .buttons .item-edit:hover,
 .buttons .item-delete:hover,
 .buttons .item-delete-confirm:hover,
@@ -3393,7 +3840,10 @@ body[data-locale='en'] .b-show_more-more .hide-more:before {
     padding: 10px;
 }
 
-.buttons span:hover,
+.buttons span:hover{
+    color: rgb(var(--c1)) !important;
+}
+
 .buttons a:hover {
     color: rgb(var(--c1)) !important;
     background: var(--d2);
@@ -3692,16 +4142,17 @@ body[data-locale='en'] .b-show_more-more .hide-more:before {
     border-radius: 4px;
     transition: .25s ease;
 }
-
-.b-shiki_editor footer .about-bb_codes a {
-    color: inherit;
+.b-shiki_editor footer .about-bb_codes a{
+    color: #fff;
 }
-
 .b-shiki_editor footer .about-bb_codes {
+    position: relative;
+    bottom: 5px;
+    right: 12px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    color: var(--t3);
+    color: #fff;
     background: var(--b2);
     margin-top: 0;
     padding: 10px 20px;
@@ -3717,11 +4168,6 @@ body[data-locale='en'] .b-show_more-more .hide-more:before {
     text-decoration: none !important;
 }
 
-.b-shiki_editor footer .about-bb_codes:active {
-    background: rgba(var(--c2), 0.15);
-    border-color: inherit;
-    color: rgb(var(--c2));
-}
 
 hr {
     border: 0;
@@ -3833,9 +4279,14 @@ code {
     color: #b3b3b3;
 }
 
-.b-quote {
+.b-quote,
+.b-quote-v2{
+    max-width: 733px;
+    width: auto;
+    position: relative;
+    left: 15px;
     background: rgba(0, 0, 0, .05);
-    border: 1px solid var(--b3);
+    border: 1px solid rgb(var(--c1));
     border-radius: 2px;
     color: var(--t2);
     font-style: normal;
@@ -4022,13 +4473,6 @@ code {
     border-radius: 4px;
     padding: 20px;
     margin-bottom: 20px;
-}
-
-.b-link_button.dark {
-    border-radius: 4px;
-    background-color: rgb(var(--c1));
-    border-color: transparent;
-    transition: .25s ease;
 }
 
 .b-link_button.dark:hover {
@@ -4494,12 +4938,11 @@ code {
     vertical-align: middle;
 }
 
-.b-anime_status_tag.studio,
-.b-anime_status_tag.other {
+.b-anime_status_tag.studio{
     border-radius: 2px;
     background: transparent !important;
     border: 2px solid !important;
-    padding: 4px 6px 0px !important;
+    padding: 2px 6px 0px !important;
     text-transform: uppercase;
     font-size: 10px;
     font-weight: bold;
@@ -4632,32 +5075,6 @@ code {
     color: rgb(var(--c1));
     border-color: initial;
     background: rgba(var(--c1), .2);
-}
-
-.b-add_to_list.planned .trigger:hover,
-.b-add_to_list.on_hold .trigger:hover {
-    color: var(--t1);
-    border-color: initial;
-    background: rgba(255, 255, 255, .2);
-}
-
-.b-add_to_list.completed .trigger:hover {
-    color: #419541;
-    border-color: initial;
-    background: rgba(44, 95, 38, 0.3);
-}
-
-.b-add_to_list.dropped .trigger:hover {
-    color: #ff0610;
-    border-color: initial;
-    background: rgba(142, 22, 29, 0.3);
-}
-
-.b-add_to_list.watching .trigger:hover,
-.b-add_to_list.rewatching .trigger:hover {
-    color: #1a8bda;
-    border-color: initial;
-    background: rgba(17, 80, 125, 0.3);
 }
 
 .b-add_to_list .option.remove-trigger:hover {
@@ -6414,7 +6831,7 @@ h3 {
 
 .b-catalog_entry.planned .image-decor:before {
     content: 'в планах';
-    background: #2b7ae3;
+    background: #5959f8;
 }
 
 .b-catalog_entry.watching .image-decor:before {
@@ -6817,8 +7234,7 @@ img.b-poster {
     background: none;
     border: none;
     position: absolute;
-    top: 154px;
-    right: 25px;
+    top: 32px;
     padding: 0;
     text-transform: uppercase;
     z-index: 1;
